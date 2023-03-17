@@ -1,0 +1,9 @@
+<p class="title">Enter New Note</p>
+<pre>
+    <input type = "Text" #taskInput>
+    <button type = "Submit" (click)="addTask(taskInput.value)">Save Note</button>
+</pre>
+
+<div class = "task" *ngFor="let task of tasks; let i = index;">
+    <h1>{{task.text}}</h1>
+</div>
