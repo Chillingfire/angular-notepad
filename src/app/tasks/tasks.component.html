@@ -1,8 +1,16 @@
-<p class="title">Enter New Note</p>
-<pre>
-    <input type = "Text" #taskInput>
-    <button type = "Submit" (click)="addTask(taskInput.value)">Save Note</button>
-</pre>
+<h1 class="title">To-Do List</h1>
+
+<form>
+    <input 
+        type="text"
+        name="taskInput"
+        placeholder="Enter new note"
+        class="taskInputText"
+        [(ngModel)]="taskInput"
+        (keyup.enter)="addTask()"
+    />
+</form>
+<button type = "Submit" (click)="addTask()">Save Note</button>
 
 <div class = "task" *ngFor="let task of tasks; let i = index;">
     <input class = "check" type="checkbox" (click)="completeTask(i)">

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Task } from './task';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tasks',
@@ -9,12 +10,15 @@ import { Task } from './task';
 export class TasksComponent {
   tasks: Task[] = [];
   taskCount: number = 1;
-  taskInput = " ";
+  taskInput:string = "";
 
-  addTask(taskText:string) {
-    console.log("Added task" + taskText);
-    this.tasks.push({"text": taskText, "completed" : false, "id" : this.taskCount});
-    this.taskCount++;
+  addTask() {
+    if (this.taskInput.length > 0) {
+      console.log("Added task" + this.taskInput);
+      this.tasks.push({"text": this.taskInput, "completed" : false, "id" : this.taskCount});
+      this.taskCount++;
+      this.taskInput = "";
+    }
   }
 
   completeTask(id:number) {
