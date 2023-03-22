@@ -5,5 +5,7 @@
 </pre>
 
 <div class = "task" *ngFor="let task of tasks; let i = index;">
-    <h1>{{task.text}}</h1>
+    <input class = "check" type="checkbox" (click)="completeTask(i)">
+    <h1 class = "content">{{task.text}}</h1>
+    <button type = "Delete" (click)="deleteTask(i)">Delete</button>
 </div>
