@@ -1,14 +1,58 @@
-div {
-    display: inline;
-    padding: 10px;
+// div {
+//     display: inline;
+//     padding: 10px;
+//     font-family: 'Montserrat', sans-serif;
+// }
+
+.title {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content {
     display: inline;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    inline-size: 100px;
+    //margin: 50px;
+}
+
+.savebutton {
+    display: block;
+    padding-right: 50px;
+    // position: relative;
+    // top: 15px;
+    background-color: #00b7ff;
+    color: white;
+    
+    border: none;
+    padding: 5px;
+    
 }
 
 .task {
-    display: block;
+    display: inline-block;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 5px solid black;
+    width: 1000px;
+    flex: none;
+    
+}
+
+.deletebutton {
+    // position: relative;
+    // left: 50px;
+    // right: 200px;
+    float: right;
+    padding-right: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.newline {
+    display: block;
 }

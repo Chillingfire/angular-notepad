@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { Task } from './task';
 import { FormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
