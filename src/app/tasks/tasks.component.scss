@@ -5,39 +5,55 @@
 // }
 
 .title {
-    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #E85A4F;
+    justify-content: center;
+    display: flex;
 }
 
 .content {
-    display: inline;
+    display: block;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 20px;
     overflow-wrap: break-word;
-    inline-size: 100px;
-    //margin: 50px;
+    inline-size: 50px;
+    width: 700px;
+    margin: 0 !important;
+}
+
+.taskInputText {
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 .savebutton {
     display: block;
     padding-right: 50px;
-    // position: relative;
-    // top: 15px;
-    background-color: #00b7ff;
-    color: white;
-    
+    background-color: #E98074;
+    color: black;
+    font-family: 'Ubuntu Mono', monospace;
     border: none;
     padding: 5px;
-    
+    margin: auto;
+    justify-content: center;
+}
+
+.savebutton:hover {
+    background-color: #eb6d5f;
 }
 
 .task {
-    display: inline-block;
+    display: flex;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid black;
+    font-family: 'Ubuntu Mono', monospace;
     width: 800px;
     flex: none;
+    background-color: #E98074;
+    margin: auto;
+    justify-content: center;
 }
 
 .spacing {
@@ -45,15 +61,17 @@
 }
 
 .deletebutton {
-    // position: relative;
-    // left: 50px;
-    // right: 200px;
     float: right;
     padding-right: 50px;
-    background-color: red;
+    background-color: #8E8D8A;
     color: white;
     border: none;
     padding: 5px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.deletebutton:hover {
+    background-color: #7c7c79;
 }
 
 .newline {
